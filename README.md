@@ -13,3 +13,5 @@ Use the Base64 encoded value as the value of the _Authorization_ header:
 `curl -H "Authorization: Basic dXNlcjoyNTc4YWIxMS04YWU3LTQwMDktYmZmMS02MjNiYTZjYjcwNWU=" http://localhost:8080/hello`  
 or  
 `http http://localhost:8080/hello Authorization:"Basic dXNlcjoyNTc4YWIxMS04YWU3LTQwMDktYmZmMS02MjNiYTZjYjcwNWU="`  
+
+### 2 - Overriding the default UserDetailsService: [Users](ssia0202users)
