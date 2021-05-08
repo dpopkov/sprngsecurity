@@ -15,3 +15,14 @@ or
 `http http://localhost:8080/hello Authorization:"Basic dXNlcjoyNTc4YWIxMS04YWU3LTQwMDktYmZmMS02MjNiYTZjYjcwNWU="`  
 
 ### 2 - Overriding the default UserDetailsService: [Users](ssia0202users)
+* Create ProjectConfig configuration class.  
+* Override the UserDetailsService bean instance.
+* Create one user with a set of credentials:
+```
+UserDetails user = User.withUsername("jane")
+        .password("doe")
+        .authorities("read")
+        .build();
+```
+* Add the user to the userDetailsService
+* Define a bean of the type PasswordEncoder: `NoOpPasswordEncoder.getInstance()`
