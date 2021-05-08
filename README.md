@@ -41,5 +41,8 @@ UserDetails user = User.withUsername("jane")
 [TOC](#spring-security)
 
 ### 3 - Alternative way of configuring UserDetailsService and PasswordEncoder: [Alternative](ssia0203alternative)
+* Add configuration class ProjectConfig extends WebSecurityConfigurerAdapter
+* Override configure(AuthenticationManagerBuilder) method
+* Override configure(HttpSecurity) method
 
 [TOC](#spring-security)
