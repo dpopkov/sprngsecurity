@@ -3,6 +3,7 @@
 * [1 - Default application: Hello](#1---default-application-hello)
 * [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-users)
 * [3 - Alternative way of configuring UserDetailsService and PasswordEncoder: Alternative](#3---alternative-way-of-configuring-userdetailsservice-and-passwordencoder-alternative)
+* [4 - Overriding the AuthenticationProvider implementation: Provider](#4---overriding-the-authenticationprovider-implementation-provider)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -44,5 +45,9 @@ UserDetails user = User.withUsername("jane")
 * Add configuration class ProjectConfig extends WebSecurityConfigurerAdapter
 * Override configure(AuthenticationManagerBuilder) method
 * Override configure(HttpSecurity) method
+
+[TOC](#spring-security)
+
+### 4 - Overriding the AuthenticationProvider implementation: [Provider](ssia0204provider)
 
 [TOC](#spring-security)
