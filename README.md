@@ -6,7 +6,7 @@ _Code ot these projects is for educational purposes only._
 * [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-users)
 * [3 - Alternative way of configuring UserDetailsService and PasswordEncoder: Alternative](#3---alternative-way-of-configuring-userdetailsservice-and-passwordencoder-alternative)
 * [4 - Overriding the default AuthenticationProvider implementation: Provider](#4---overriding-the-default-authenticationprovider-implementation-provider)
-* [5 - Describing the user: User](#5---describing-the-user-user)
+* [5 - Describing the user, implementing UserDetailsService](#5---describing-the-user-implementing-userdetailsservice-user)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -57,6 +57,9 @@ UserDetails user = User.withUsername("jane")
 
 [TOC](#spring-security)
 
-### 5 - Describing the user: [User](ssia0301user)
+### 5 - Describing the user, implementing UserDetailsService: [User](ssia0301user)
+* Add simple class User implements UserDetails
+* Add simple class InMemoryUserDetailsService implements UserDetailsService
+* Register the InMemoryUserDetailsService in ProjectConfig class
 
 [TOC](#spring-security)

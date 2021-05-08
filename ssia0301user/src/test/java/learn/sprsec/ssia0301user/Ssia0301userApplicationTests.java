@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -31,6 +32,22 @@ class Ssia0301userApplicationTests {
     void helloAuthenticated() throws Exception {
         mvc.perform(get("/hello"))
                 .andExpect(content().string("Hello!"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    @DisplayName("Test calling /hello endpoint authenticating with wrong credentials returns unauthorized.")
+    public void helloAuthenticatingWithWrongUser() throws Exception {
+        mvc.perform(get("/hello")
+                .with(httpBasic("bill","12345")))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @DisplayName("Test calling /hello endpoint authenticating with valid credentials returns ok.")
+    public void helloAuthenticatingWithValidUser() throws Exception {
+        mvc.perform(get("/hello")
+                .with(httpBasic("jane","123")))
                 .andExpect(status().isOk());
     }
 }
