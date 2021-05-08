@@ -2,6 +2,7 @@
 
 * [1 - Default application: Hello](#1---default-application-hello)
 * [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-users)
+* [3 - Alternative way of configuring UserDetailsService and PasswordEncoder: Alternative](#3---alternative-way-of-configuring-userdetailsservice-and-passwordencoder-alternative)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -36,5 +37,9 @@ UserDetails user = User.withUsername("jane")
 * Use HttpSecurity parameter to change configuration:
     * default config: `http.authorizeRequests().anyRequest() .authenticated();`
     * make all endpoints accessible: `http.authorizeRequests().anyRequest().permitAll();`
+
+[TOC](#spring-security)
+
+### 3 - Alternative way of configuring UserDetailsService and PasswordEncoder: [Alternative](ssia0203alternative)
 
 [TOC](#spring-security)
