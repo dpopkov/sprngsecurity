@@ -96,5 +96,7 @@ spring.datasource.initialization-mode=always
 * Obtain the Authentication from a method parameter
 * Use default security context strategy SecurityContextHolder.MODE_THREADLOCAL
 * Use security context strategy SecurityContextHolder.MODE_INHERITABLETHREADLOCAL
+* Use DelegatingSecurityContextCallable to forward the security context to self-managed thread
+* Use DelegatingSecurityContextExecutorService to forward the security context to self-managed thread
 
 [TOC](#spring-security)
