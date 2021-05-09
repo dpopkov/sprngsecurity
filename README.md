@@ -66,5 +66,17 @@ UserDetails user = User.withUsername("jane")
 [TOC](#spring-security)
 
 ### 6 - Using a JdbcUserDetailsManager for user management: [JDBC](ssia0302jdbc)
+* Create database `ssia`
+* Add `schema.sql` and `data.sql` to project
+* Add `spring-boot-starter-jdbc` and `mysql-connector-java` dependencies to pom.xml
+* Add properties:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/ssia?serverTimezone=UTC
+spring.datasource.username=<your user>
+spring.datasource.password=<your password>
+spring.datasource.initialization-mode=always
+```
+* Add ProjectConfig, register JdbcUserDetailsManager
+* (Optional) Override queries for the JdbcUserDetailsManager if names of tables and columns are not default
 
 [TOC](#spring-security)
