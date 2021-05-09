@@ -8,6 +8,7 @@ _Code ot these projects is for educational purposes only._
 * [4 - Overriding the default AuthenticationProvider implementation: Provider](#4---overriding-the-default-authenticationprovider-implementation-provider)
 * [5 - Describing the user, implementing UserDetailsService](#5---describing-the-user-implementing-userdetailsservice-user)
 * [6 - Using a JdbcUserDetailsManager for user management: JDBC](#6---using-a-jdbcuserdetailsmanager-for-user-management-jdbc)
+* [7 - Custom authentication logic: Auth](#7---custom-authentication-logic-auth)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -78,5 +79,9 @@ spring.datasource.initialization-mode=always
 ```
 * Add ProjectConfig, register JdbcUserDetailsManager
 * (Optional) Override queries for the JdbcUserDetailsManager if names of tables and columns are not default
+
+[TOC](#spring-security)
+
+### 7 - Custom authentication logic: [Auth](ssia0501auth)
 
 [TOC](#spring-security)
