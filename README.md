@@ -83,5 +83,9 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 7 - Custom authentication logic: [Auth](ssia0501auth)
+* Declare a class CustomAuthenticationProvider that implements the AuthenticationProvider contract
+* Override the supports(Class<?>) method to specify which type of authentication is supported
+* Override the authenticate(Authentication) method to implement the authentication logic
+* Register the AuthenticationProvider in the configuration class ProjectConfig
 
 [TOC](#spring-security)
