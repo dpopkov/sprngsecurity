@@ -7,6 +7,7 @@ _Code ot these projects is for educational purposes only._
 * [3 - Alternative way of configuring UserDetailsService and PasswordEncoder: Alternative](#3---alternative-way-of-configuring-userdetailsservice-and-passwordencoder-alternative)
 * [4 - Overriding the default AuthenticationProvider implementation: Provider](#4---overriding-the-default-authenticationprovider-implementation-provider)
 * [5 - Describing the user, implementing UserDetailsService](#5---describing-the-user-implementing-userdetailsservice-user)
+* [6 - Using a JdbcUserDetailsManager for user management: JDBC](#6---using-a-jdbcuserdetailsmanager-for-user-management-jdbc)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -61,5 +62,9 @@ UserDetails user = User.withUsername("jane")
 * Add simple class User implements UserDetails
 * Add simple class InMemoryUserDetailsService implements UserDetailsService
 * Register the InMemoryUserDetailsService in ProjectConfig class
+
+[TOC](#spring-security)
+
+### 6 - Using a JdbcUserDetailsManager for user management: [JDBC](ssia0302jdbc)
 
 [TOC](#spring-security)
