@@ -92,5 +92,9 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 8 - Using the SecurityContext: [Context](ssia0502context)
+* Obtain the SecurityContext from the SecurityContextHolder
+* Obtain the Authentication from a method parameter
+* Use default security context strategy SecurityContextHolder.MODE_THREADLOCAL
+* Use security context strategy SecurityContextHolder.MODE_INHERITABLETHREADLOCAL
 
 [TOC](#spring-security)
