@@ -123,5 +123,11 @@ spring.datasource.initialization-mode=always
 * Create database `ssiaweb`
 * Add `schema.sql` and `data.sql`
 * Add connection properties and dependency for spring-boot-starter-data-jpa and mysql-connector-java
+#### Implement user management
+* Define the password encoder objects for the two hashing algorithms (bcrypt and scrypt)
+* Define the JPA entities to represent the user and authority tables that store the details needed in the authentication process
+* Declare the JpaRepository contract for Spring Data - UserRepository
+* Create a decorator that implements the UserDetails contract over the User JPA entity  - CustomUserDetails
+* Implement the UserDetailsService contract - JpaUserDetailsService
 
 [TOC](#spring-security)
