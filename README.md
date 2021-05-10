@@ -119,5 +119,9 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 11 - A small secured web application: [Web](ssia0601web)
+#### Setup project db
+* Create database `ssiaweb`
+* Add `schema.sql` and `data.sql`
+* Add connection properties and dependency for spring-boot-starter-data-jpa and mysql-connector-java
 
 [TOC](#spring-security)
