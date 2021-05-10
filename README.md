@@ -3,7 +3,7 @@
 _Code in these projects is for educational purposes only._
 
 * [1 - Default application: Hello](#1---default-application-hello)
-* [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-users)
+* [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-and-passwordencoder-users)
 * [3 - Alternative way of configuring UserDetailsService and PasswordEncoder: Alternative](#3---alternative-way-of-configuring-userdetailsservice-and-passwordencoder-alternative)
 * [4 - Overriding the default AuthenticationProvider implementation: Provider](#4---overriding-the-default-authenticationprovider-implementation-provider)
 * [5 - Describing the user, implementing UserDetailsService](#5---describing-the-user-implementing-userdetailsservice-user)
@@ -110,5 +110,9 @@ spring.datasource.initialization-mode=always
 * Add class ProjectConfig extends WebSecurityConfigurerAdapter
 * Override configure(HttpSecurity http) and call the formLogin() and defaultSuccessUrl() methods of the HttpSecurity parameter
 * Add HomeController and home page
+* Add class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler
+* Add class CustomAuthenticationFailureHandler implements AuthenticationFailureHandler
+* Register both handlers in ProjectConfig
+* Change the configuration to support both the HTTP Basic and the form-based login methods
 
 [TOC](#spring-security)
