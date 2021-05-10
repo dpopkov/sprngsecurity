@@ -11,6 +11,7 @@ _Code in these projects is for educational purposes only._
 * [7 - Custom authentication logic: Auth](#7---custom-authentication-logic-auth)
 * [8 - Using the SecurityContext: Context](#8---using-the-securitycontext-context)
 * [10 - Implementing authentication with form-based login: Form](#10---implementing-authentication-with-form-based-login-form)
+* [11 - A small secured web application: Web](#11---a-small-secured-web-application-web)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -114,5 +115,9 @@ spring.datasource.initialization-mode=always
 * Add class CustomAuthenticationFailureHandler implements AuthenticationFailureHandler
 * Register both handlers in ProjectConfig
 * Change the configuration to support both the HTTP Basic and the form-based login methods
+
+[TOC](#spring-security)
+
+### 11 - A small secured web application: [Web](ssia0601web)
 
 [TOC](#spring-security)
