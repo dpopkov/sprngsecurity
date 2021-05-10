@@ -129,5 +129,9 @@ spring.datasource.initialization-mode=always
 * Declare the JpaRepository contract for Spring Data - UserRepository
 * Create a decorator that implements the UserDetails contract over the User JPA entity  - CustomUserDetails
 * Implement the UserDetailsService contract - JpaUserDetailsService
+#### Implement custom authentication logic
+* Add class AuthenticationProviderService implements AuthenticationProvider
+* Register AuthenticationProvider in ProjectConfig
+* Implement the static main page and controller
 
 [TOC](#spring-security)
