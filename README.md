@@ -107,5 +107,8 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 10 - Implementing authentication with form-based login: [Form](ssia0504form)
+* Add class ProjectConfig extends WebSecurityConfigurerAdapter
+* Override configure(HttpSecurity http) and call the formLogin() and defaultSuccessUrl() methods of the HttpSecurity parameter
+* Add HomeController and home page
 
 [TOC](#spring-security)
