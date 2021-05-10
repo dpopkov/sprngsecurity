@@ -1,6 +1,6 @@
 # Spring Security
 
-_Code ot these projects is for educational purposes only._
+_Code in these projects is for educational purposes only._
 
 * [1 - Default application: Hello](#1---default-application-hello)
 * [2 - Overriding the default UserDetailsService: Users](#2---overriding-the-default-userdetailsservice-users)
@@ -10,6 +10,7 @@ _Code ot these projects is for educational purposes only._
 * [6 - Using a JdbcUserDetailsManager for user management: JDBC](#6---using-a-jdbcuserdetailsmanager-for-user-management-jdbc)
 * [7 - Custom authentication logic: Auth](#7---custom-authentication-logic-auth)
 * [8 - Using the SecurityContext: Context](#8---using-the-securitycontext-context)
+* [10 - Implementing authentication with form-based login: Form](#10---implementing-authentication-with-form-based-login-form)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -98,5 +99,13 @@ spring.datasource.initialization-mode=always
 * Use security context strategy SecurityContextHolder.MODE_INHERITABLETHREADLOCAL
 * Use DelegatingSecurityContextCallable to forward the security context to self-managed thread
 * Use DelegatingSecurityContextExecutorService to forward the security context to self-managed thread
+
+[TOC](#spring-security)
+
+### 9 - Using and configuring HTTP Basic
+
+[TOC](#spring-security)
+
+### 10 - Implementing authentication with form-based login: [Form](ssia0504form)
 
 [TOC](#spring-security)
