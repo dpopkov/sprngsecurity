@@ -133,5 +133,9 @@ spring.datasource.initialization-mode=always
 * Add class AuthenticationProviderService implements AuthenticationProvider
 * Register AuthenticationProvider in ProjectConfig
 * Implement the static main page and controller
+#### Display records of the product table on the main page
+* Add Product entity, repository and service
+* Add spring-boot-starter-thymeleaf dependency
+* Move main page to templates and display products
 
 [TOC](#spring-security)
