@@ -13,6 +13,7 @@ _Code in these projects is for educational purposes only._
 * [10 - Implementing authentication with form-based login: Form](#10---implementing-authentication-with-form-based-login-form)
 * [11 - A small secured web application: Web](#11---a-small-secured-web-application-web)
 * [12 - Restricting access for all endpoints based on user authorities: Authorities](#12---restricting-access-for-all-endpoints-based-on-user-authorities-authorities)
+* [13 - Restricting access for all endpoints based on user roles: Roles](#13---restricting-access-for-all-endpoints-based-on-user-roles-roles)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -145,5 +146,9 @@ spring.datasource.initialization-mode=always
 * Create ProjectConfig and InMemoryUserDetailsManager bean, create 2 users.
 * Create NoOpPasswordEncoder bean.
 * Call hasAuthority("authority") or access("expression") methods to restrict access based on authorities.
+
+[TOC](#spring-security)
+
+### 13 - Restricting access for all endpoints based on user roles: [Roles](ssia0703roles)
 
 [TOC](#spring-security)
