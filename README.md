@@ -150,5 +150,8 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 13 - Restricting access for all endpoints based on user roles: [Roles](ssia0703roles)
+* Create ProjectConfig and InMemoryUserDetailsManager bean, create 2 users.
+* Create NoOpPasswordEncoder bean.
+* Call hasRole("role") or access("expression") methods to restrict access based on Roles.
 
 [TOC](#spring-security)
