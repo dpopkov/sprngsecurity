@@ -142,5 +142,8 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 12 - Restricting access for all endpoints based on user authorities: [Authorities](ssia0701authorities)
+* Create ProjectConfig and InMemoryUserDetailsManager bean, create 2 users.
+* Create NoOpPasswordEncoder bean.
+* Call hasAuthority("authority") or access("expression") methods to restrict access based on authorities.
 
 [TOC](#spring-security)
