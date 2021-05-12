@@ -15,6 +15,7 @@ _Code in these projects is for educational purposes only._
 * [12 - Restricting access for all endpoints based on user authorities: Authorities](#12---restricting-access-for-all-endpoints-based-on-user-authorities-authorities)
 * [13 - Restricting access for all endpoints based on user roles: Roles](#13---restricting-access-for-all-endpoints-based-on-user-roles-roles)
 * [14 - Using matcher methods to select endpoint: Matcher](#14---using-matcher-methods-to-select-endpoint-matcher)
+* [15 - Selecting requests for authorization using MVC matchers: MvcMatchers](#15---selecting-requests-for-authorization-using-mvc-matchers-mvcmatchers)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -160,5 +161,9 @@ spring.datasource.initialization-mode=always
 ### 14 - Using matcher methods to select endpoint: [Matcher](ssia0801matcher)
 * Create ProjectConfig, create InMemoryUserDetailsManager, add two users.
 * Use mvcMatchers() method to select endpoint
+
+[TOC](#spring-security)
+
+### 15 - Selecting requests for authorization using MVC matchers: [MvcMatchers](ssia0802mvcmatchers)
 
 [TOC](#spring-security)
