@@ -14,6 +14,7 @@ _Code in these projects is for educational purposes only._
 * [11 - A small secured web application: Web](#11---a-small-secured-web-application-web)
 * [12 - Restricting access for all endpoints based on user authorities: Authorities](#12---restricting-access-for-all-endpoints-based-on-user-authorities-authorities)
 * [13 - Restricting access for all endpoints based on user roles: Roles](#13---restricting-access-for-all-endpoints-based-on-user-roles-roles)
+* [14 - Using matcher methods to select endpoint: Matcher](#14---using-matcher-methods-to-select-endpoint-matcher)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -153,5 +154,9 @@ spring.datasource.initialization-mode=always
 * Create ProjectConfig and InMemoryUserDetailsManager bean, create 2 users.
 * Create NoOpPasswordEncoder bean.
 * Call hasRole("role") or access("expression") methods to restrict access based on Roles.
+
+[TOC](#spring-security)
+
+### 14 - Using matcher methods to select endpoint: [Matcher](ssia0801matcher)
 
 [TOC](#spring-security)
