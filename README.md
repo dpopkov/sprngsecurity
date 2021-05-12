@@ -158,5 +158,7 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 14 - Using matcher methods to select endpoint: [Matcher](ssia0801matcher)
+* Create ProjectConfig, create InMemoryUserDetailsManager, add two users.
+* Use mvcMatchers() method to select endpoint
 
 [TOC](#spring-security)
