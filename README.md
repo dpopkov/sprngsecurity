@@ -175,5 +175,7 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 16 - Selecting requests for authorization using regex matchers: [Regex](ssia0806regex)
+* Create ProjectConfig, create InMemoryUserDetailsManager, add two users.
+* Use regexMatchers(regex) with _regular expression_ to select endpoints.
 
 [TOC](#spring-security)
