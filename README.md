@@ -182,5 +182,8 @@ spring.datasource.initialization-mode=always
 [TOC](#spring-security)
 
 ### 17 - Adding a filter before an existing one in the chain: [Filter Before](ssia0901filterbefore)
+* Add class RequestValidationFilter implements Filter.
+* Call addFilterBefore(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
+to configure the custom filter before authentication.
 
 [TOC](#spring-security)
