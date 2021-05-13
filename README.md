@@ -16,6 +16,7 @@ _Code in these projects is for educational purposes only._
 * [13 - Restricting access for all endpoints based on user roles: Roles](#13---restricting-access-for-all-endpoints-based-on-user-roles-roles)
 * [14 - Using matcher methods to select endpoint: Matcher](#14---using-matcher-methods-to-select-endpoint-matcher)
 * [15 - Selecting requests for authorization using MVC matchers: MvcMatchers](#15---selecting-requests-for-authorization-using-mvc-matchers-mvcmatchers)
+* [16 - Selecting requests for authorization using regex matchers: Regex](#16---selecting-requests-for-authorization-using-regex-matchers-regex)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -170,5 +171,9 @@ spring.datasource.initialization-mode=always
 * Disable CSRF just for this example.
 * Add ProductController with path variable `code`.
 * Use mvcMatchers(pattern) with parameter _regular expression_ to select endpoint.
+
+[TOC](#spring-security)
+
+### 16 - Selecting requests for authorization using regex matchers: [Regex](ssia0806regex)
 
 [TOC](#spring-security)
