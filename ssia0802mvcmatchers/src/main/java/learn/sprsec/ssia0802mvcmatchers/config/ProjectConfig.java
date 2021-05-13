@@ -42,6 +42,8 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic();
         http.authorizeRequests()
+                .mvcMatchers("/product/{code:^[0-9]+$}")
+                    .permitAll()
                 .mvcMatchers(HttpMethod.GET, "/a")
                     .authenticated()
                 .mvcMatchers(HttpMethod.POST, "/a")

@@ -167,6 +167,8 @@ spring.datasource.initialization-mode=always
 ### 15 - Selecting requests for authorization using MVC matchers: [MvcMatchers](ssia0802mvcmatchers)
 * Create ProjectConfig, create InMemoryUserDetailsManager, add two users.
 * Use mvcMatchers(HttpMethod, pattern) with _path expressions_ methods to select endpoint.
-* Disable CSRF just for this example
+* Disable CSRF just for this example.
+* Add ProductController with path variable `code`.
+* Use mvcMatchers(pattern) with parameter _regular expression_ to select endpoint.
 
 [TOC](#spring-security)
