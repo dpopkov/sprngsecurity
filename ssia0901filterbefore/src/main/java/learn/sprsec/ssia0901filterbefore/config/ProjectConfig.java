@@ -1,5 +1,6 @@
 package learn.sprsec.ssia0901filterbefore.config;
 
+import learn.sprsec.ssia0901filterbefore.filter.AuthenticationLoggingFilter;
 import learn.sprsec.ssia0901filterbefore.filter.RequestValidationFilter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,6 +15,8 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
         http.addFilterBefore(
                 new RequestValidationFilter(),
                 BasicAuthenticationFilter.class)
+            .addFilterAfter(new AuthenticationLoggingFilter(),
+                        BasicAuthenticationFilter.class)
             .authorizeRequests()
                 .anyRequest().permitAll();
     }

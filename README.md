@@ -17,7 +17,7 @@ _Code in these projects is for educational purposes only._
 * [14 - Using matcher methods to select endpoint: Matcher](#14---using-matcher-methods-to-select-endpoint-matcher)
 * [15 - Selecting requests for authorization using MVC matchers: MvcMatchers](#15---selecting-requests-for-authorization-using-mvc-matchers-mvcmatchers)
 * [16 - Selecting requests for authorization using regex matchers: Regex](#16---selecting-requests-for-authorization-using-regex-matchers-regex)
-* [17 - Adding a filter before an existing one in the chain: Filter Before](#17---adding-a-filter-before-an-existing-one-in-the-chain-filter-before)
+* [17 - Adding a filter before or after an existing one in the chain: Filter Before/After](#17---adding-a-filter-before-or-after-an-existing-one-in-the-chain-filter-beforeafter)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -181,9 +181,12 @@ spring.datasource.initialization-mode=always
 
 [TOC](#spring-security)
 
-### 17 - Adding a filter before an existing one in the chain: [Filter Before](ssia0901filterbefore)
+### 17 - Adding a filter before or after an existing one in the chain: [Filter Before/After](ssia0901filterbefore)
 * Add class RequestValidationFilter implements Filter.
 * Call addFilterBefore(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
 to configure the custom filter before authentication.
+* Add class AuthenticationLoggingFilter implements Filter.
+* Call addFilterAfter(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
+to configure the custom filter after authentication.
 
 [TOC](#spring-security)
