@@ -205,5 +205,15 @@ to disable the auto-configuration of the default UserDetailsService.
 [TOC](#spring-security)
 
 ### 19 - How CSRF protection works: [CSRF Log](ssia1001csrflog)
+* Add HelloController with GET and POST endpoints.
+* Add class CsrfTokenLoggingFilter implements Filter that logs CSRF token to console.
+* Create ProjectConfig and add the filter after CsrfFilter.
+* Call GET request and save JSESSIONID cookie value and logged CSRF token.
+* Call POST request using saved values:
+```
+http POST localhost:8080/hello 
+Cookie:JSESSIONID=BB2D09918979417141639C3526949726 
+X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
+```
 
 [TOC](#spring-security)
