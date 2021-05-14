@@ -193,5 +193,11 @@ to configure the custom filter after authentication.
 [TOC](#spring-security)
 
 ### 18 - Adding a filter at the location of another in the chain: [Filter At](ssia0902filterat)
+* Add class StaticKeyAuthenticationFilter implements Filter.
+* Call getHeader("Authorization") and compare with a static authentication key.
+* Call addFilterAt(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
+to configure the custom StaticKeyAuthenticationFilter.
+* Use the `exclude` attribute of the @SpringBootApplication annotation 
+to disable the auto-configuration of the default UserDetailsService.
 
 [TOC](#spring-security)
