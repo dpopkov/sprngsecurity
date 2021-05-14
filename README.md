@@ -20,6 +20,7 @@ _Code in these projects is for educational purposes only._
 * [17 - Adding a filter before or after an existing one in the chain: Filter Before/After](#17---adding-a-filter-before-or-after-an-existing-one-in-the-chain-filter-beforeafter)
 * [18 - Addinf a filter at the location of another in the chain: Filter At](#18---addinf-a-filter-at-the-location-of-another-in-the-chain-filter-at)
 * [19 - How CSRF protection works: CSRF Log](#19---how-csrf-protection-works-csrf-log)
+* [20 - Using CSRF protection in practical scenarios: CSRF Real](#20---using-csrf-protection-in-practical-scenarios-csrf-real)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -215,5 +216,9 @@ http POST localhost:8080/hello
 Cookie:JSESSIONID=BB2D09918979417141639C3526949726 
 X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 ```
+
+[TOC](#spring-security)
+
+### 20 - Using CSRF protection in practical scenarios: [CSRF Real](ssia1002csrfreal)
 
 [TOC](#spring-security)
