@@ -19,6 +19,7 @@ _Code in these projects is for educational purposes only._
 * [16 - Selecting requests for authorization using regex matchers: Regex](#16---selecting-requests-for-authorization-using-regex-matchers-regex)
 * [17 - Adding a filter before or after an existing one in the chain: Filter Before/After](#17---adding-a-filter-before-or-after-an-existing-one-in-the-chain-filter-beforeafter)
 * [18 - Addinf a filter at the location of another in the chain: Filter At](#18---addinf-a-filter-at-the-location-of-another-in-the-chain-filter-at)
+* [19 - How CSRF protection works: CSRF Log](#19---how-csrf-protection-works-csrf-log)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -200,5 +201,9 @@ to configure the custom filter after authentication.
 to configure the custom StaticKeyAuthenticationFilter.
 * Use the `exclude` attribute of the @SpringBootApplication annotation 
 to disable the auto-configuration of the default UserDetailsService.
+
+[TOC](#spring-security)
+
+### 19 - How CSRF protection works: [CSRF Log](ssia1001csrflog)
 
 [TOC](#spring-security)
