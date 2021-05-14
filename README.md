@@ -18,6 +18,7 @@ _Code in these projects is for educational purposes only._
 * [15 - Selecting requests for authorization using MVC matchers: MvcMatchers](#15---selecting-requests-for-authorization-using-mvc-matchers-mvcmatchers)
 * [16 - Selecting requests for authorization using regex matchers: Regex](#16---selecting-requests-for-authorization-using-regex-matchers-regex)
 * [17 - Adding a filter before or after an existing one in the chain: Filter Before/After](#17---adding-a-filter-before-or-after-an-existing-one-in-the-chain-filter-beforeafter)
+* [18 - Addinf a filter at the location of another in the chain: Filter At](#18---addinf-a-filter-at-the-location-of-another-in-the-chain-filter-at)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -188,5 +189,9 @@ to configure the custom filter before authentication.
 * Add class AuthenticationLoggingFilter implements Filter.
 * Call addFilterAfter(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
 to configure the custom filter after authentication.
+
+[TOC](#spring-security)
+
+### 18 - Adding a filter at the location of another in the chain: [Filter At](ssia0902filterat)
 
 [TOC](#spring-security)
