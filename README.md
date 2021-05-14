@@ -189,6 +189,7 @@ to configure the custom filter before authentication.
 * Add class AuthenticationLoggingFilter implements Filter.
 * Call addFilterAfter(javax.servlet.Filter, Class<? extends javax.servlet.Filter>) method 
 to configure the custom filter after authentication.
+* Use OncePerRequestFilter as base class for AuthenticationLoggingFilter.
 
 [TOC](#spring-security)
 
