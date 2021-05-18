@@ -18,7 +18,7 @@ _Code in these projects is for educational purposes only._
 * [15 - Selecting requests for authorization using MVC matchers: MvcMatchers](#15---selecting-requests-for-authorization-using-mvc-matchers-mvcmatchers)
 * [16 - Selecting requests for authorization using regex matchers: Regex](#16---selecting-requests-for-authorization-using-regex-matchers-regex)
 * [17 - Adding a filter before or after an existing one in the chain: Filter Before/After](#17---adding-a-filter-before-or-after-an-existing-one-in-the-chain-filter-beforeafter)
-* [18 - Addinf a filter at the location of another in the chain: Filter At](#18---addinf-a-filter-at-the-location-of-another-in-the-chain-filter-at)
+* [18 - Adding a filter at the location of another in the chain: Filter At](#18---adding-a-filter-at-the-location-of-another-in-the-chain-filter-at)
 * [19 - How CSRF protection works: CSRF Log](#19---how-csrf-protection-works-csrf-log)
 * [20 - Using CSRF protection in practical scenarios: CSRF Real](#20---using-csrf-protection-in-practical-scenarios-csrf-real)
 
@@ -220,5 +220,8 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 [TOC](#spring-security)
 
 ### 20 - Using CSRF protection in practical scenarios: [CSRF Real](ssia1002csrfreal)
+* Add class ProjectConfig extends WebSecurityConfigurerAdapter
+* Define beans for UserDetailsService and PasswordEncoder.
+* Add main page and controller.
 
 [TOC](#spring-security)
