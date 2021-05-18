@@ -223,5 +223,7 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 * Add class ProjectConfig extends WebSecurityConfigurerAdapter
 * Define beans for UserDetailsService and PasswordEncoder.
 * Add main page and controller.
+* Add ProductController with a form containing POST action.
+* Add CSRF token to the request done through the form.
 
 [TOC](#spring-security)
