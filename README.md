@@ -21,6 +21,7 @@ _Code in these projects is for educational purposes only._
 * [18 - Adding a filter at the location of another in the chain: Filter At](#18---adding-a-filter-at-the-location-of-another-in-the-chain-filter-at)
 * [19 - How CSRF protection works: CSRF Log](#19---how-csrf-protection-works-csrf-log)
 * [20 - Using CSRF protection in practical scenarios: CSRF Real](#20---using-csrf-protection-in-practical-scenarios-csrf-real)
+* [21 - Customizing CSRF protection: CSRF Custom](#21---customizing-csrf-protection-csrf-custom)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -225,5 +226,9 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 * Add main page and controller.
 * Add ProductController with a form containing POST action.
 * Add CSRF token to the request done through the form.
+
+[TOC](#spring-security)
+
+### 21 - Customizing CSRF protection: [CSRF Custom](ssia1003csrfcustom)
 
 [TOC](#spring-security)
