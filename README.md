@@ -230,5 +230,7 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 [TOC](#spring-security)
 
 ### 21 - Customizing CSRF protection: [CSRF Custom](ssia1003csrfcustom)
+* Add controller with 2 POST endpoints.
+* Use CsrfConfigurer to configure CSRF protection.
 
 [TOC](#spring-security)
