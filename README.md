@@ -232,5 +232,15 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 ### 21 - Customizing CSRF protection: [CSRF Custom](ssia1003csrfcustom)
 * Add controller with 2 POST endpoints.
 * Use CsrfConfigurer to configure CSRF protection.
+* Add dependencies for spring-boot-starter-data-jpa and mysql-connector-java.
+* Add implementation of CsrfTokenRepository to store tokens in a database.
+* Add SQL schema for table storing tokens. 
+* Add entity and repository for CSRF token.
+* Add class CustomCsrfTokenRepository implements CsrfTokenRepository.
+* Send headers:
+```
+http GET localhost:8080/hello X-IDENTIFIER:12345
+http POST localhost:8080/hello X-IDENTIFIER:12345 X-CSRF-TOKEN:63b9489a-35cc-4396-aec4-677f07703bb6
+```
 
 [TOC](#spring-security)
