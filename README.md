@@ -22,6 +22,7 @@ _Code in these projects is for educational purposes only._
 * [19 - How CSRF protection works: CSRF Log](#19---how-csrf-protection-works-csrf-log)
 * [20 - Using CSRF protection in practical scenarios: CSRF Real](#20---using-csrf-protection-in-practical-scenarios-csrf-real)
 * [21 - Customizing CSRF protection: CSRF Custom](#21---customizing-csrf-protection-csrf-custom)
+* [22 - CORS - Cross Origin Resource Sharing: CORS](#22---cors---cross-origin-resource-sharing-cors)
 
 ### 1 - Default application: [Hello](ssia0201hello)
 It generates a new random password and prints it in the console. 
@@ -242,5 +243,9 @@ X-CSRF-TOKEN:fe1626d5-5951-40df-9f4b-70c1cbf7f623
 http GET localhost:8080/hello X-IDENTIFIER:12345
 http POST localhost:8080/hello X-IDENTIFIER:12345 X-CSRF-TOKEN:63b9489a-35cc-4396-aec4-677f07703bb6
 ```
+
+[TOC](#spring-security)
+
+### 22 - CORS - Cross Origin Resource Sharing: [CORS](ssia1004cors)
 
 [TOC](#spring-security)
